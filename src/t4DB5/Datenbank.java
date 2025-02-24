@@ -13,20 +13,8 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
 
-/*import org.eclipse.jgit.api.FetchCommand;
-import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.PullCommand;
-import org.eclipse.jgit.api.PushCommand;
-import org.eclipse.jgit.api.errors.CheckoutConflictException;
-import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.transport.CredentialsProvider;
-import org.eclipse.jgit.transport.RefSpec;
-import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
-*/
 public class Datenbank {
 
-	//private static final String DB_LOCATION = "..\\DB";
-	//private static final String DB_LOCATION = "c:\\Users\\puchalska\\ownCloud - Bergmann Robert (bergmann)@owncloud.tuwien.ac.at\\DB";
 	private static final String DB_LOCATION = "c:\\Java\\DB";
 	private static final String CONNECTION = "jdbc:derby:" + DB_LOCATION + ";create = true";
 
