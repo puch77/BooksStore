@@ -1,0 +1,50 @@
+/*	
+	private static final String GITHUB_REPO_URL = "https://github.com/puch77/DB.git";
+    private static final String GITHUB_USERNAME = "puch77";
+    private static final String GITHUB_TOKEN = "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";
+
+   public static void updateGitHubRepository() throws GitAPIException {
+        try {
+            // Open the local Git repository
+            Git git = Git.open(new File(DB_LOCATION));
+
+            // Fetch changes from the remote repository
+            fetchChanges(git);
+
+            // Pull changes into the local repository
+            pullChanges(git);
+
+            // Make your local changes here...
+
+            // Commit any local changes (if necessary)
+            commitChanges(git, "Your commit message");
+            
+            // Push changes to the remote repository
+            pushChanges(git, GITHUB_USERNAME, GITHUB_TOKEN);
+        } catch (Exception e) {
+            //throw new GitAPIException("Error updating GitHub repository.", e);
+        }
+    }
+
+    private static void commitChanges(Git git, String commitMessage) throws GitAPIException {
+        // Stage all changes
+        git.add().addFilepattern(".").call();
+
+        // Commit the changes
+        git.commit().setMessage(commitMessage).call();
+    }
+
+    private static void fetchChanges(Git git) throws GitAPIException {
+        git.fetch().call();
+    }
+
+    private static void pullChanges(Git git) throws GitAPIException {
+        git.pull().call();
+    }
+
+    private static void pushChanges(Git git, String username, String token) throws GitAPIException {
+        CredentialsProvider credentialsProvider = new UsernamePasswordCredentialsProvider(username, token);
+        PushCommand push = git.push().setCredentialsProvider(credentialsProvider);
+        push.call();
+    }
+*/
